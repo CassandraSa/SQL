@@ -1,0 +1,18 @@
+/** Clothing Store List:
+Top ($10)
+Ripped Jeans ($20)
+Leggings ($12)
+Shorts ($15)
+Panties ($8)
+**/
+
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER);
+
+INSERT INTO clothing_store VALUES (1,"Top",10);
+INSERT INTO clothing_store VALUES (2, "Ripped Jeans",20);
+INSERT INTO clothing_store VALUES (3, "Leggings", 12);
+INSERT INTO clothing_store VALUES (4, "Shorts",15);
+INSERT INTO clothing_store VALUES (5,"Panties", 8);
+
+SELECT SUM(price) FROM clothing_store;
+SELECT * FROM clothing_store;
